@@ -1,10 +1,20 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 class CityList extends Component {
-  render () {
+  render() {
+    const style = {
+      paddingLeft: "24px"
+    };
+
     return (
-      <h1>TEST</h1>
-    )
+      this.props.cities.map((item) => {
+        return (
+          <div key={item.slug} style={style}>
+            <h1>{item.name}</h1>
+          </div>
+        );
+      })
+    );
   }
 }
 
