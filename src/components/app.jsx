@@ -1,9 +1,13 @@
 import React from 'react';
+import FlatList from '../containers/flatList.jsx'
+import Map from '../containers/map.jsx'
+
 
 const App = () => {
   return (
     <div className="app">
-      <p>React + Redux starter</p>
+      <FlatList />
+      <Map />
     </div>
   );
 };
