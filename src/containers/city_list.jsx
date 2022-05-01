@@ -13,11 +13,15 @@ class CityList extends Component {
 
   render() {
     return (
-      this.props.cities.cities.map((city) => {
-        return (
-          <City city={city} key={city.slug} />
-        );
-      })
+      <div className="cities">
+        <ul>
+          {this.props.cities.cities.map((city) => {
+            return (
+              <City city={city} key={city.slug} />
+            );
+          })}
+        </ul>
+      </div>
     );
   }
 }
