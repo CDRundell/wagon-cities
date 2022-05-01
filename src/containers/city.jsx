@@ -2,9 +2,15 @@ import React, { Component } from 'react';
 
 
 class City extends Component {
-  render () {
+  render (props) {
+    const style = {
+      paddingLeft: "24px"
+    };
+
     return (
-      <h1>HELLO WORLD</h1>
+      <div style={style}>
+        <h1>{this.props.city.name}</h1>
+      </div>
     )
   }
 }
